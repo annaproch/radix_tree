@@ -19,36 +19,37 @@ If run with "-v" option, for each command (except "find") prints to stderr
 number of nodes in a tree after executing the command.
 
 Example of usage:
+----------------
 
-in:
-insert abcabc
-find bca    
-prev 0 1 4 
-find bca 
-delete 10
-delete 1
-find bc
-clear
+**in:**  
+insert abcabc  
+find bca  
+prev 0 1 4  
+find bca  
+delete 10  
+delete 1  
+find bc  
+clear  
 
-make
-./dictionary -v < in
+*make  
+./dictionary -v < in*
 
-Stdout
-------
+**Stdout**
 
-word number: 0
-NO
-word number: 1
-YES
-ignored
-deleted: 1
-NO
-cleared
 
-Stderr
-------
+word number: 0  
+NO  
+word number: 1  
+YES  
+ignored  
+deleted: 1  
+NO  
+cleared  
 
-nodes: 2
-nodes: 3
-nodes: 2
-nodes: 0
+**Stderr**
+
+
+nodes: 2  
+nodes: 3  
+nodes: 2  
+nodes: 0  
